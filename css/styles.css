@@ -1,0 +1,303 @@
+body {
+    background: #e5e5e5;
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.main-content-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.wrapper {
+    border-radius: 0px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row-reverse;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 1200px;
+    margin: auto;
+}
+.test137 {
+    background-color: #000000;
+}
+.about-me-container {
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-bottom: 90px;
+}
+
+.about-me {
+    margin-bottom: 64px;
+}
+
+.descr {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    margin-bottom: 64px;
+}
+
+.my-projects {
+    margin-bottom: 51px;
+}
+
+.my-projects-list {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    padding-left: 20px;
+}
+
+.i1,
+.i2,
+.i3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    position: relative;
+}
+
+.i1::before,
+.i2::before,
+.i3::before {
+    bottom: 9px;
+    content: "";
+    display: inline-block;
+    width: 250px;
+    height: 5px;
+    border-bottom: 1px dashed #a8a8a8;
+    margin-bottom: -3px;
+    left: -250px;
+}
+
+.i1::before {
+    width: 164px;
+}
+
+.i2::before {
+    width: 136px;
+}
+
+.i3::before {
+    width: 156px;
+}
+
+.my-profesional {
+    margin-bottom: 18px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 17px;
+    margin-top: 102px;
+    margin-bottom: 18px;
+}
+
+.work-exp-title {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.work-exp-company {
+    color: #6d9bf5;
+}
+
+.work-exp-time,
+.education-time {
+    margin: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #a8a8a8;
+}
+
+.work-exp-time span,
+.education-time span {
+    color: #000000;
+}
+
+.work-exp-descr {
+    margin-top: 8px;
+    margin-left: 4px;
+    padding-left: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.education {
+    margin-top: 44px;
+}
+
+.education-place {
+    margin: 12px 0 12px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6d9bf5;
+}
+
+.education-block {
+    margin-bottom: 30px;
+}
+
+.education-prof {
+    margin: 12px 0 12px 0;
+}
+
+h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    color: #000000;
+}
+
+/* Sidebar */
+aside {
+    width: 370px;
+    background: #e0ebfe;
+}
+
+.my-photo {
+    margin-top: 40px;
+}
+
+aside div {
+    margin: 48px 0 0 40px;
+}
+
+.sidebar-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #161d2a;
+    margin-bottom: 8px;
+}
+
+.contacts-type {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #161d2a;
+}
+
+.contacts-item {
+    margin-bottom: 5px;
+}
+
+.contacts-number {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #161d2a;
+    text-decoration: none;
+}
+
+.contacts-mail {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2979ff;
+}
+
+.contacts-type {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.contacts-type-email {
+    background-image: url("../img/mail.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: -5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.contacts-type-teams {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/group-chat.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: -12px;
+}
+
+.contacts-type-telegram {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/telegram.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: -5px;
+    margin-left: 2px;
+    margin-right: 8px;
+}
+
+.sidebar-list {
+    margin: 0 0 0 8px;
+    padding: 0 0 0 12px;
+}
+
+.sidebar-list-item {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6d9bf5;
+}
+
+.list-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #005fff;
+}
+
+.sidebar-list-content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #161d2a;
+}

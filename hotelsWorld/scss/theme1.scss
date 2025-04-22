@@ -1,0 +1,316 @@
+@import "vars";
+@import "color-matrix1";
+@import "reset";
+@import "typography";
+@import "grid";
+@import "main";
+.header-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: $header-bg;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    height: 600px;
+    color: #ffffff;
+    margin-bottom: 0;
+    &__logo {
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: 35px;
+        @include roboto-bold;
+        margin-top: 33px;
+    }
+    &__title {
+        text-transform: uppercase;
+        @include roboto-bold;
+        margin-top: 401px;
+    }
+    &__title-descr {
+        margin-top: 13px;
+        padding-left: 3px;
+    }
+}
+
+.nav {
+    margin-top: 43px;
+    padding-right: 16px;
+    &__items-wrapper {
+        text-align: right;
+        font-size: 0;
+    }
+    &__item {
+        display: inline-block;
+        @include roboto-bold;
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 21px;
+        margin-left: 29px;
+        padding: 0 5px 3px 5px;
+        cursor: url("../img/hand-pointer-svgrepo-com.svg"), pointer;
+        transition: border-bottom-color 0.4s ease;
+        border-bottom: solid 2px transparent;
+        &:hover {
+            border-bottom-color: #ffffff;
+        }
+        &--active {
+            border-bottom-color: #ffffff;
+        }
+    }
+}
+
+.filter {
+    @extend .animal-tab1;
+    margin-top: 27px;
+    &__item {
+        @extend .animal-tab1__item;
+        padding-bottom: 7px;
+        &--active {
+            border-color: $tab-active;
+        }
+        &:hover {
+            @extend .roboto-bold;
+        }
+    }
+}
+
+.room-card {
+    box-shadow: 0 1px 8px 0 rgba(206, 206, 206, 0.5);
+    padding-bottom: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.4s ease;
+    &:hover {
+        box-shadow: 0 1px 20px 0 rgba(78, 78, 78, 0.5);
+    }
+    &__img-wrapper {
+        width: 100%;
+        height: 246px;
+    }
+    &__descr {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 21px;
+        padding-left: 21px;
+    }
+    &__price {
+        @include roboto-bold;
+        font-size: 30px;
+        line-height: 35px;
+        padding-left: 20px;
+        text-align: left;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+    &__book-btn {
+        @extend .button;
+        margin-right: 7px;
+        margin-top: -8px;
+        background-color: $book-btncolor-default;
+        &:hover {
+            background-color: $book-btncolor-hover;
+        }
+        &:active {
+            background-color: $book-btncolor-active;
+        }
+    }
+}
+
+.description {
+    &__title {
+        @extend .roboto-regular;
+        margin-top: 32px;
+        margin-bottom: 15px;
+        &:nth-of-type(2) {
+            margin-top: 39px;
+        }
+    }
+}
+
+.rooms {
+    margin-top: 40px;
+    &__title {
+        @extend .roboto-regular;
+    }
+    &__title {
+        margin-bottom: 31px;
+    }
+    &__row {
+        margin-bottom: 50px;
+    }
+}
+
+.p-b-wrapper {
+    margin-top: 47px;
+    text-align: right;
+}
+
+.r-r {
+    &__title {
+        @extend .roboto-regular;
+        margin-top: 60px;
+    }
+}
+
+.r-r-filter {
+    &__item {
+        display: inline-block;
+    }
+    input[type="radio"] {
+        display: none;
+    }
+    &__title {
+        margin-top: 30px;
+        @extend .roboto-regular;
+        font-size: 20px;
+    }
+}
+
+.cb-label {
+    @extend .roboto-bold;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+    vertical-align: text-bottom;
+    &--bad {
+        color: $black;
+    }
+    &--good {
+        color: $red;
+    }
+    &--vgood {
+        color: $blue;
+    }
+    &--excellent {
+        color: $orange;
+    }
+    &--brilliant {
+        color: $green-2;
+    }
+}
+
+.review {
+    padding-left: 30px;
+    padding-right: 34px;
+    &__head {
+        margin-bottom: 23px;
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+    &__name {
+        @extend .roboto-bold;
+        font-size: 20px;
+    }
+    &__data {
+        @extend .roboto-light;
+        font-size: 20px;
+        padding-left: 27px;
+    }
+    &__rate {
+        @extend .roboto-bold;
+        font-size: 20px;
+        color: $blue;
+        padding-left: 55px;
+        display: none;
+        &--bad {
+            color: $black;
+        }
+        &--good {
+            color: $red;
+        }
+        &--vgood {
+            color: $blue;
+        }
+        &--excellent {
+            color: $orange;
+        }
+        &--brilliant {
+            color: $green-2;
+        }
+    }
+    &__date {
+        float: right;
+        font-size: 20px;
+    }
+    &__text {
+        font-size: 20px;
+        margin-bottom: 89px;
+    }
+    &:nth-of-type(2) &__text {
+        margin-bottom: 70px;
+    }
+}
+
+.float-none {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.paginations__button {
+    &--curent {
+        background-color: $pagination-btncolor-active;
+        color: #ffffff;
+        cursor: auto;
+        &:hover {
+            background-color: $pagination-btncolor-active;
+        }
+    }
+}
+
+.footer {
+    margin-top: 176px;
+    &__list {
+        margin-top: 26px;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+}
+
+.r-r:has(#bad:checked) {
+    & .review__rate {
+        &--bad {
+            display: inline;
+        }
+    }
+}
+
+.r-r:has(#good:checked) {
+    & .review__rate {
+        &--good {
+            display: inline;
+        }
+    }
+}
+
+.r-r:has(#vgood:checked) {
+    & .review__rate {
+        &--vgood {
+            display: inline;
+        }
+    }
+}
+
+.r-r:has(#excellent:checked) {
+    & .review__rate {
+        &--excellent {
+            display: inline;
+        }
+    }
+}
+
+.r-r:has(#brilliant:checked) {
+    & .review__rate {
+        &--brilliant {
+            display: inline;
+        }
+    }
+}

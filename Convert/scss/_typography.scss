@@ -1,0 +1,48 @@
+/*typography*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+@mixin text-primary($weight: 400, $size: 16px, $color: $black) {
+  font-family: "Libre Franklin", serif;
+  font-weight: $weight;
+  font-style: normal;
+  font-size: $size;
+  color: $color;
+}
+
+
+@font-face {
+  font-family: 'lucida_granderegular';
+  src: url('../fonts/lucidagrande-webfont.eot');
+  src: url('../fonts/lucidagrande-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lucidagrande-webfont.woff2') format('woff2'),
+       url('../fonts/lucidagrande-webfont.woff') format('woff'),
+       url('../fonts/lucidagrande-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'lucida_grandebold';
+  src: url('../fonts/lucidagrande_bold-webfont.eot');
+  src: url('../fonts/lucidagrande_bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lucidagrande_bold-webfont.woff2') format('woff2'),
+       url('../fonts/lucidagrande_bold-webfont.woff') format('woff'),
+       url('../fonts/lucidagrande_bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@mixin text-secondary-1($size: 16px, $color: $black) {
+  font-family: 'lucida_granderegular', sans-serif;
+  font-size: $size;
+  color: $color;
+}
+
+@mixin text-secondary-2($size: 16px, $color: $black) {
+  font-family: 'lucida_grandebold', sans-serif;
+  font-size: $size;
+  color: $color;
+}
+

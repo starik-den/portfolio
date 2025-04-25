@@ -838,6 +838,11 @@ table {
     width: 768px;
   }
 }
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 480px;
+  }
+}
 .footer__copy {
   text-align: center;
   font-family: "Libre Franklin", serif;
